@@ -23,7 +23,7 @@ footer{
     text-align: center;
     margin-bottom: 0%;
     padding-bottom: 0%;
-    position: absolute;
+    position: relative;
 }
 /* Button style */
 .buttons{
@@ -57,4 +57,21 @@ footer{
     border: indigo;
     border-style: groove;
 
+}
+/*  this style has been taken from love maths project */
+.game-area{
+    height: 50%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.player{
+    float: left;
+    
+}
+.comp{
+    float: right;
 }
