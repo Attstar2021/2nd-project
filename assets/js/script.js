@@ -18,11 +18,12 @@ let buttons = document.getElementsByTagName("button");
 
 
 
+
 /**Add event listener to buttons
  */
 for (let button of buttons) {
     button.addEventListener("click", function(){
-        if(this,getAttribute("choices"))
-        playGame(playerchoice);
+        if(this.getAttribute("data-choice") === "0")
+        playerImage = `assets/images/Rock1.png`
     });
 }

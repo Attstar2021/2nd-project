@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Jura:wght@300&display=swap');
 /* Main structure styling */
-html, body{
+ body{
     background-color: rgb(9, 50, 128);
     color: #f5f5f5;
     font-family: 'Istok Web', 'sans-serif';
     margin:0;
-    padding:0;
     height:90%;
     padding-bottom: 120px;
     scroll-behavior: auto;
@@ -17,28 +16,28 @@ header{
     width: 100%;
     height: 120px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: -12px;
     padding-top: 0px;
 }
 footer{
     width: 100%;
     height: 50px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: -200px;
     margin-top: 5px;
     margin-left: 0px;
     
 }   
 /* Button style */
-.buttons{
+
+.bttn{
     border: transparent;
     font-size: .5rem;
     width: 100%;
     height: 90px;
     text-align: center;
     margin: 0 auto;
-    
-
+    align-items: baseline;
 }
 .rock-btn {
     font-size: 65px;
@@ -60,9 +59,10 @@ footer{
     color: rgb(31, 136, 31);
     background-color: lightblue;
     border: indigo;
-    border-style: groove;
+    border-style: groove;  
 
 }
+
 /*  this style has been taken from love maths project */
 .game-area{
     height:85%;
@@ -73,7 +73,7 @@ footer{
     text-align: center;
 }
 
-.player{
+.you{
     display: inline-block;
     background-color: rgb(31, 136, 31);
     
@@ -81,6 +81,7 @@ footer{
 .comp{
     display: inline-block;
     background-color:rgb(175, 59, 59);
+}
 .message{
     margin-bottom:10px;
     
