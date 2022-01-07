@@ -8,6 +8,7 @@ html, body{
     padding:0;
     height:90%;
     padding-bottom: 120px;
+    scroll-behavior: auto;
     
 }
 header{
@@ -41,21 +42,22 @@ footer{
 }
 .rock-btn {
     font-size: 65px;
-    color: red;
+    color: rgb(175, 59, 59);
     background-color: lightblue;
     border: indigo;
     border-style: groove;
 }
 .paper-btn{
     font-size: 65px;
-    color:slateblue;
+    color:rgb(9, 50, 128) ;
     background-color: lightblue;
     border: indigo;
     border-style: groove;
+
 }
 .scissors-btn{
     font-size: 65px;
-    color: green;
+    color: rgb(31, 136, 31);
     background-color: lightblue;
     border: indigo;
     border-style: groove;
@@ -73,11 +75,13 @@ footer{
 
 .player{
     display: inline-block;
+    background-color: rgb(31, 136, 31);
     
 }
 .comp{
     display: inline-block;
-}
+    background-color:rgb(175, 59, 59);
 .message{
     margin-bottom:10px;
+    
 }
