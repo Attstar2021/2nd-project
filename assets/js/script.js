@@ -1,10 +1,27 @@
+/*jshint esversion: 6 */
 /** This code has been taken from rock, paper and scissors game of code institue */
 /* Constants for DOM elements and choices
 */
+document.addEventListener("DOMContentLoaded", function(){
+    let buttons = document.getElementById("button");
+    for (let button of buttons){
+        button.addEventListener("click",  e => 
+        {
+            playerImage = e.target.dispatchEvent;
+            rNum = Math.floor(Math.random() * 3) + 1;
+            generateComputerSelection();
+            compareSelection();
+            computerSelection.innerHTML = '<img src ="assets/images/'+ compImage + '.png">';
+            playerSelection.innerHTML = '<img src ="assets/images/' + playerImage + '.png">';
+            displayResults.innerHTML = result;
+            incrementComputerScore();
+            incrementPlayerScore();
+        
+        })
+    }
+})
 var rNum;
 var result;
-var computerChoice;
-var UserChoice;
 let oldScore = undefined;
 
 const computerScore = document.getElementById("computer-score");
@@ -12,59 +29,43 @@ const playerScore = document.getElementById("player-score");
 const resultDisplay = document.getElementById("result");
 const computerSelection = document.getElementById("compImage");
 const playerSelection = document.getElementById("playerImage");
-const possibleSelections = document.getElementsByTagName("button");
+//const possibleSelections = document.querySelectorAll(".choices");
 
-document.addEventListener("DOMContentLoaded", function(){
-
-possibleSelections.forEach(possibleSelection => possibleSelection.addEventListener('click', e => 
-{
-    playerImage = e.target.dispatchEvent;
-    rNum = Math.floor(Math.random() * 3) + 1;
-    generateComputerSelection();
-    compareSelection();
-    computerSelection.innerHTML = '<img src ="assets/images/'+ computerChoice + '.png">';
-    playerSelection.innerHTML = '<img src ="assets/images/' + playerChoice + '.png">';
-    displayResults.innerHTML = result;
-    incrementComputerScore();
-    incrementPlayerScore();
-
-
-}));
 
 function generateComputerSelection(){
     if(rNum == 0)
     {
-        computerChoice= 'rock';
+        compImage= 'rock';
     } else  if(rNum == 1)
     {
-        computerChoice = 'paper';
+        compImage = 'paper';
     } else  if(rNum == 2)
     {
-        computerChoice = 'scissors';
+        compImage = 'scissors';
     }
 }
 
 function compareSelection(){
 
-    if(playerChoice == computerChoice)
+    if(playerImage == compImage)
     {
         result = "It's a tie game!";
-    } else if (playerChoice == 'scissors' && computerChoice == 'paper')
+    } else if (playerImage == 'scissors' && compImage == 'paper')
     {
      result = "You Win!";  
-    }else if (playerChoice == 'paper' && computerChoice == 'rock')
+    }else if (playerImage == 'paper' && compImage == 'rock')
     {
      result = "You Win!" ;  
-    }else if (playerChoice == 'rock' && computerChoice == 'scissors')
+    }else if (playerImage == 'rock' && compImage == 'scissors')
     {
      result = "You Win!";   
-    }else if (playerChoice == 'scissors' && computerChoice == 'rock')
+    }else if (playerImage == 'scissors' && compImage == 'rock')
     {
      result = "Computer Wins!";  
-    }else if (playerChoice == 'rock' && computerChoice == 'paper')
+    }else if (playerImage == 'rock' && compImage == 'paper')
     {
      result = "Computer Wins!";  
-    }else if (playerChoice == 'paper' && computerChoice == 'scissors')
+    }else if (playerImage == 'paper' && compImage == 'scissors')
     {
      result = "Computer Wins!";   
     }}
