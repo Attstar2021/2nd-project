@@ -1,40 +1,81 @@
 /** This code has been taken from rock, paper and scissors game of code institue */
 /* Constants for DOM elements and choices
 */
+var rNum;
+var result;
+var computerChoice;
+var UserChoice;
+let oldScore = undefined;
+
 const computerScore = document.getElementById("computer-score");
 const playerScore = document.getElementById("player-score");
-const resultsDisplay = document.getElementById("results");
-const computerSelection = document.getElementById("computer-image");
-const playerSelection = document.getElementById("player-image");
+const resultDisplay = document.getElementById("result");
+const computerSelection = document.getElementById("compImage");
+const playerSelection = document.getElementById("playerImage");
+const possibleSelections = document.getElementsByTagName("button");
 
+document.addEventListener("DOMContentLoaded", function(){
 
-
-
-
-/*const choices = {
-    "rock":"/assets/images/Rock1.png",
-    "paper":"/assets/images/Rock1.png", 
-    "scissors":"/assets/images/Rock1.png"
-}
-const playerChoice = choices;
-let buttons = document.getElementsByTagName("button");
-
-
-
-
-
-/**Add event listener to buttons
- *
- 
-playerChoice.forEach(choices => choices,addEventListener('click', e=>
+possibleSelections.forEach(possibleSelection => possibleSelection.addEventListener('click', e => 
 {
-   playerChoice
-}))
-for (let button of buttons) {
-    button.addEventListener("click", function(){
-        if(this.getAttribute("data-choice") === "0")
-        playerImage = `assets/images/Rock1.png`
-    });
+    playerImage = e.target.dispatchEvent;
+    rNum = Math.floor(Math.random() * 3) + 1;
+    generateComputerSelection();
+    compareSelection();
+    computerSelection.innerHTML = '<img src ="assets/images/'+ computerChoice + '.png">';
+    playerSelection.innerHTML = '<img src ="assets/images/' + playerChoice + '.png">';
+    displayResults.innerHTML = result;
+    incrementComputerScore();
+    incrementPlayerScore();
+
+
+}));
+
+function generateComputerSelection(){
+    if(rNum == 0)
+    {
+        computerChoice= 'rock';
+    } else  if(rNum == 1)
+    {
+        computerChoice = 'paper';
+    } else  if(rNum == 2)
+    {
+        computerChoice = 'scissors';
+    }
 }
 
-*/
+function compareSelection(){
+
+    if(playerChoice == computerChoice)
+    {
+        result = "It's a tie game!";
+    } else if (playerChoice == 'scissors' && computerChoice == 'paper')
+    {
+     result = "You Win!";  
+    }else if (playerChoice == 'paper' && computerChoice == 'rock')
+    {
+     result = "You Win!" ;  
+    }else if (playerChoice == 'rock' && computerChoice == 'scissors')
+    {
+     result = "You Win!";   
+    }else if (playerChoice == 'scissors' && computerChoice == 'rock')
+    {
+     result = "Computer Wins!";  
+    }else if (playerChoice == 'rock' && computerChoice == 'paper')
+    {
+     result = "Computer Wins!";  
+    }else if (playerChoice == 'paper' && computerChoice == 'scissors')
+    {
+     result = "Computer Wins!";   
+    }}
+
+    function incrementPlayerScore(){
+        let oldScore =parseInt(document.getElementById("player-score").innerText);
+        document.getElementById("player-score").innerText = ++oldScore;
+    }
+    
+    
+    function incrementComputerScore(){
+        let oldScore =parseInt(document.getElementById("computer-score").innerText);
+        document.getElementById("computer-score").innerText = ++oldScore;
+    }
