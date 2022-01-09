@@ -1,15 +1,75 @@
-# ***Rock, Paper and Scissors***
+# ***Rock Paper Scissors***
 
  
-
-This is a marketing website for a renovation company named as charismatic home renovation which is bulid for people who are looking for ideal renovation services in affordable price. User of this website will have clear idea of what services they can and how to get in touch with services provider.
+Rock Paper Scissor is to entertain its user without the boundaries of age and experience limit, it is very easy and a good time passing game that has a truly randon which makes the game more fairer.
 
 This is responsive site and can be accessible on all size of devices for all type of user. View the live project below,
+
+
+
+
+
 ![148688269-487fec40-f796-4412-b64c-d480cff236b](https://user-images.githubusercontent.com/91749477/148688628-8f0a5767-86ab-4030-96e9-3a3dfa89cea3.png)
 
 
 
-![143772741-e0e9e560-9e3e-4af2-91e1-3bb19367c46f](https://user-images.githubusercontent.com/91749477/143773006-155c369f-7da1-474f-b5e8-9084ef557fa4.png)
+## Features
+
+
+
+![mainImage](https://user-images.githubusercontent.com/91749477/148692175-7903593e-e618-4f0f-9f6d-d8cd15c56cc2.png)
+
+### The Header
+
+
+- Featured at the top the page, the header shows the game name is clear and colorful way which gives an idea of what game the user is going to play.
+
+
+
+![header](https://user-images.githubusercontent.com/91749477/148692130-1b70c105-9b6d-4148-9f29-fb8043567c71.png)
+
+
+
+### Game area
+
+- Game area includes buttons for making choices, players scoresboards, players images of selection and a quick resut display for every move.
+- This section provide interactive buttons that user can click to make a choice and play game.
+- when user click on an option, the image relating to their choices appears on screen along with computer choice and then results shows that is a winner.
+- The results and scores are clear to user to make it more easy to understand that who is winner on every move and also telly total scores for both players (i.e. user and computer).
+
+
+
+![Gamearea](https://user-images.githubusercontent.com/91749477/148692167-cec715e2-70ed-413e-9fff-5365197c5d59.png)
+
+
+- The following images show how this game works and looks while playing
+- Also shows how truly random the computer selections are.
+- Following are the glimps of the game, that how it works!
+
+![playingGame1](https://user-images.githubusercontent.com/91749477/148692179-9bef6b9a-3561-4fcd-b23f-5e9b9ef81774.png)
+
+![playingGame2](https://user-images.githubusercontent.com/91749477/148692212-b79844e5-0be2-4f17-96b1-76bd10837c98.png)
+
+![playingGame3](https://user-images.githubusercontent.com/91749477/148692205-e397cf37-eb69-45d4-8eab-a7a2d508fd01.png)
+
+![playingGame4](https://user-images.githubusercontent.com/91749477/148692184-124bb5cd-b8c3-49b5-89cc-12239244d01b.png)
+
+
+
+
+### The Footer
+
+- Footer Shows the game rules which makes game easy to understand and play. 
+
+![FooterImage](https://user-images.githubusercontent.com/91749477/148692152-483ca613-5918-4deb-bdc3-863da13001f9.png)
+
+
+
+
+
+
+
+
 
 ## User Experience (UX)
 
@@ -17,7 +77,7 @@ This is responsive site and can be accessible on all size of devices for all typ
 
    - First Time Visitor Goals
 
-     When i visit site for the first time I want to easily understand the main purpose of the site and wants to learn more about the organisation. I want to be able to easily navigate throughout the site to find content and description. I also want to locate their social media  links to see their followings on social media to determine how trusted the site is.
+     When i visit site for the first time I want to easily understand the main purpose of the site and also easy to understand how to 
      
    - Returning Visitor Goals
 
@@ -28,44 +88,6 @@ This is responsive site and can be accessible on all size of devices for all typ
      I want to check to see if there are any newly added services or styles for home renovation
      
 
-## Features
-
-
-### The Header
-
-The Header contain logo, navigation and main image.
-Navigations links are on top right side of page which are created for quick access to different section within the same page.
-This is to provide clear information on what the site is about and who it is for.
-
-![image](https://user-images.githubusercontent.com/91749477/148688739-ad099923-2b14-4b3e-9c5e-549a9cd06515.png)
-
-
-![image](https://user-images.githubusercontent.com/91749477/148688767-908012a9-883d-44f5-a32c-9044e159360b.png)
-
-
-![image](https://user-images.githubusercontent.com/91749477/148689335-f9626b31-3b38-445a-ab45-2e8dfbfb8291.png)
-
-![image](https://user-images.githubusercontent.com/91749477/148689353-35eff32d-cf84-4ea8-b714-00ee32ce3f7b.png)
-
-![image](https://user-images.githubusercontent.com/91749477/148689359-e4d13a30-6c9e-46ef-b283-a0ab6e9061b1.png)
-
-![image](https://user-images.githubusercontent.com/91749477/148689372-53770f88-820d-4f82-aac4-19d17e0e5883.png)
-
-
-
-
-
-
-
-
-
-
-
-### The Footer
-
-
-
-
 
 ## Testing
 
@@ -73,7 +95,7 @@ Firstly this site was tested manually again and again to remove any errors and t
 
 
 
-![143774644-71a6ed25-7c86-489a-9004-355adbc0285c](https://user-images.githubusercontent.com/91749477/143937189-cb5645d3-5660-4f40-8073-1563a262a763.png)
+
 
 
 
@@ -88,7 +110,6 @@ This site is created with help of following coding languages
 #### HTML Testing
 
 
-![html validator](https://user-images.githubusercontent.com/91749477/143773960-6363c27f-9c32-473e-9b3a-752fcbb196f3.png)
 
 
 
@@ -96,7 +117,7 @@ This site is created with help of following coding languages
 #### CSS Testing
 
 
-![143773166-7e0f528a-c62f-443b-acaf-22937b66e2ac (1)](https://user-images.githubusercontent.com/91749477/143773885-3d2ec901-05cc-430a-ba60-fb26a2ad9097.png)
+
 
 
 
