@@ -8,8 +8,7 @@
     margin:0;
     height:90%;
     padding-bottom: 120px;
-    scroll-behavior: auto;
-    
+    scroll-behavior: auto;   
 }
 
 /*Header and footer. */
@@ -22,17 +21,17 @@ header{
     margin-top: -12px;
     padding-top: 0px;
 }
+
 footer{
     width: 100%;
     height: 50px;
     text-align: center;
     margin-bottom: -200px;
     margin-top: 5px;
-    margin-left: 0px;
-    
+    margin-left: 0px;   
 }   
-/* Button style */
 
+/* Button style */
 .button{
     border: transparent;
     font-size: .5rem;
@@ -42,6 +41,7 @@ footer{
     margin: 0 auto;
     align-items: baseline;
 }
+
 .rock-btn {
     font-size: 65px;
     color: rgb(175, 59, 59);
@@ -49,22 +49,21 @@ footer{
     border: indigo;
     border-style: groove;
 }
+
 .paper-btn{
     font-size: 65px;
     color:rgb(9, 50, 128) ;
     background-color: lightblue;
     border: indigo;
     border-style: groove;
-
 }
+
 .scissors-btn{
     font-size: 65px;
     color: rgb(31, 136, 31);
     background-color: lightblue;
     border: indigo;
     border-style: groove;
-    
-
 }
 
 /*  Game area.
@@ -79,17 +78,16 @@ This coding style has been taken from love maths project */
 }
 
 /* Player and Computer display.*/
-
 .you{
     display: inline-block;
-    background-color: rgb(31, 136, 31);
-    
+    background-color: rgb(31, 136, 31);   
 }
+
 .comp{
     display: inline-block;
     background-color:rgb(175, 59, 59);
 }
+
 .message{
-    margin-bottom:10px;
-    
+    margin-bottom:10px;   
 }
