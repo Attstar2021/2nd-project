@@ -67,58 +67,35 @@ This is responsive site and can be accessible on all size of devices for all typ
 
 
 
-
-
-
-
-## User Experience (UX)
-
-- User stories
-
-   - First Time Visitor Goals
-
-     When i visit site for the first time I want to easily understand the main purpose of the site and also easy to understand how to 
-     
-   - Returning Visitor Goals
-
-     I want to find more information about services they provide and the best way to contact them.
-    
-   - Frequent User Goals
-
-     I want to check to see if there are any newly added services or styles for home renovation
-     
-
-
 ## Testing
 
 Firstly this site was tested manually again and again to remove any errors and then finally tested through lighthouse, detail report for its accessibility and performance is given below;
 
-
-
-
+![Accessibility](https://user-images.githubusercontent.com/91749477/148696170-c9747c61-30df-477a-b506-b459b4532c87.png)
 
 
 
 ### Validator Testing
 
-This site is created with help of following coding languages
+This site is created with help of following coding languages;
  1. HTML5
  2. CSS
+ 3. JavaScript
  
- Coding of both languages has been tested through validators and reports are shown below.
+ Coding of all three languages has been tested through validators and reports are shown below.
 
 #### HTML Testing
 
-
-
-
+![HTML](https://user-images.githubusercontent.com/91749477/148696327-358aec8e-d3fc-4722-94a7-058ef985efaf.png)
 
 
 #### CSS Testing
 
+![CSS](https://user-images.githubusercontent.com/91749477/148696314-dc178c63-71c3-4559-a8ae-c59b27bb0b7c.png)
 
+#### JS Testing
 
-
+![JSHINT](https://user-images.githubusercontent.com/91749477/148696339-28594435-d88f-496a-ad48-fdb83aceb192.png)
 
 
 
@@ -126,21 +103,31 @@ This site is created with help of following coding languages
 
 Here is the list of bugs found during running codes.
 
-1.In responsive design of mobile view all image were hugging right side of mobile creating extra space which looks not presentable
- - I removed margins in media queries to bring images to left.
-2. stray end tag nav
- - It was a duplicate so I removed one to fix the bug.
-3. Duplicate ID gallery 
- - Two id created with different name one gal1 and other gal2.
+1. 4. computer-image and player images stacking on each other in Laptop screen
+- Change property to 'display: inline-block'.
+2. button were not iterable
+- To sort out this I open console and done quite many changes to get it right, some of them are given below
+  - changed id name and deleted duplicate id.
+  - In Eventlistner changed let buttons = document.getElementsByTagName("button"); to let choices = document.getElementsByClassName("choices"); 
+  - computerImage.src =`assets/images/${choices[computerChoice]}.png to computerSelection.setAttribute("src",`./assets/images/${compImage}.png`);
+  - Renaming image file taking off numerical number and convering to png etc.
+3. Player scores and computer scores was adding up togther on every click.
+- reason were
+  - I added incrementPlayerScore() and incrementComputerScore() into button event listener (so delete it both)
+  - In compareSelection() along with result I added incrementComputerScore() where computer win and incrementPlayerScore where player wins. 
+4. No rules were created to count tie match. 
+ - draw function created 
+5. results was showing undefine
+ - added value 0 to span of h2 
+ - Changing incrementPlayerScore = playerScore; to incrementPlayerScore.innerHTML = playerScore
+ 
+6. ';' was missing in some code
+ - correction done with help of console and JShint
 
 
 ##### Unfix bugs
 
-
-Images sizes
-
-
-
+Message for selection choice added up in last minute while completing readme file so can't be seen in images shared in this file.
 
 ## Deployment
 
