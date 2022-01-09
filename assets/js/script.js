@@ -1,5 +1,4 @@
 /*jshint esversion: 6 */
-/** This code has been taken from rock, paper and scissors game of code institue */
 /* Constants for DOM elements and choices
 */
 const computerScore = document.getElementById("computer-score");
@@ -7,13 +6,12 @@ const playerScore = document.getElementById("player-score");
 const resultDisplay = document.getElementById("result");
 const computerSelection = document.getElementById("compImage");
 const playerSelection = document.getElementById("playerImage");
-//const possibleSelections = document.querySelectorAll(".choices");
 
 var rNum;
 var result;
 var playerImage;
 var compImage;
-
+/* Add event listener for all buttons*/
 
 document.addEventListener("DOMContentLoaded", function(){
     let choices = document.getElementsByClassName("choices");
@@ -28,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
             computerSelection.setAttribute("src",`./assets/images/${compImage}.png`);
             playerSelection.setAttribute("src",`./assets/images/${playerImage}.png`);
             resultDisplay.innerHTML = result;
+           
         
         });
     }
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
+/** Add computer selection method */
 
 function generateComputerSelection(){
     if(rNum == 0)
@@ -49,7 +48,7 @@ function generateComputerSelection(){
         compImage = 'scissor';
     }
 }
-
+/** Add compare selection for results and score increment method */
 function compareSelection(){
     
     if(playerImage == compImage)
@@ -88,6 +87,8 @@ function compareSelection(){
     }
 
 
+/** Add score increment method for user and computer  */
+
 
     function incrementPlayerScore(){
         let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
@@ -99,8 +100,12 @@ function compareSelection(){
     function incrementComputerScore(){
         let oldCompScore =parseInt(document.getElementById("computer-score").innerText);
         document.getElementById("computer-score").innerText = ++oldCompScore;
-        incrementPlayerScore = playerScore;
+        incrementPlayerScore.innerHTML = playerScore;
     }
+
+    /** Create a draw function incase computer and player choice is same */
+
+
     function draw(){
         let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
         document.getElementById("player-score").innerText = ++oldPlayerScore;

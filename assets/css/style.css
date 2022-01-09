@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Jura:wght@300&display=swap');
-/* Main structure styling */
+
+/* Main area */
  body{
     background-color: rgb(9, 50, 128);
     color: #f5f5f5;
@@ -10,6 +11,8 @@
     scroll-behavior: auto;
     
 }
+
+/*Header and footer. */
 header{
     background-color:#f5f5f5 ;
     color:rgb(9, 50, 128) ;
@@ -64,7 +67,8 @@ footer{
 
 }
 
-/*  this style has been taken from love maths project */
+/*  Game area.
+This coding style has been taken from love maths project */
 .game-area{
     height:85%;
     width: 100%;
@@ -73,6 +77,8 @@ footer{
     margin-top: 1%;
     text-align: center;
 }
+
+/* Player and Computer display.*/
 
 .you{
     display: inline-block;
