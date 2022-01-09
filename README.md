@@ -1,108 +1,157 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ***Rock, Paper and Scissors***
 
-Welcome Attstar2021,
+ 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is a marketing website for a renovation company named as charismatic home renovation which is bulid for people who are looking for ideal renovation services in affordable price. User of this website will have clear idea of what services they can and how to get in touch with services provider.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This is responsive site and can be accessible on all size of devices for all type of user. View the live project below,
+![148688269-487fec40-f796-4412-b64c-d480cff236b](https://user-images.githubusercontent.com/91749477/148688628-8f0a5767-86ab-4030-96e9-3a3dfa89cea3.png)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+![143772741-e0e9e560-9e3e-4af2-91e1-3bb19367c46f](https://user-images.githubusercontent.com/91749477/143773006-155c369f-7da1-474f-b5e8-9084ef557fa4.png)
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+- User stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+   - First Time Visitor Goals
 
-A blue button should appear to click: _Make Public_,
+     When i visit site for the first time I want to easily understand the main purpose of the site and wants to learn more about the organisation. I want to be able to easily navigate throughout the site to find content and description. I also want to locate their social media  links to see their followings on social media to determine how trusted the site is.
+     
+   - Returning Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+     I want to find more information about services they provide and the best way to contact them.
+    
+   - Frequent User Goals
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+     I want to check to see if there are any newly added services or styles for home renovation
+     
 
-To log into the Heroku toolbelt CLI:
+## Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### The Header
 
-------
+The Header contain logo, navigation and main image.
+Navigations links are on top right side of page which are created for quick access to different section within the same page.
+This is to provide clear information on what the site is about and who it is for.
 
-## Release History
+![image](https://user-images.githubusercontent.com/91749477/148688739-ad099923-2b14-4b3e-9c5e-549a9cd06515.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![image](https://user-images.githubusercontent.com/91749477/148688767-908012a9-883d-44f5-a32c-9044e159360b.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![image](https://user-images.githubusercontent.com/91749477/148689335-f9626b31-3b38-445a-ab45-2e8dfbfb8291.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![image](https://user-images.githubusercontent.com/91749477/148689353-35eff32d-cf84-4ea8-b714-00ee32ce3f7b.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![image](https://user-images.githubusercontent.com/91749477/148689359-e4d13a30-6c9e-46ef-b283-a0ab6e9061b1.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![image](https://user-images.githubusercontent.com/91749477/148689372-53770f88-820d-4f82-aac4-19d17e0e5883.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+### The Footer
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Testing
 
-**So….?**
+Firstly this site was tested manually again and again to remove any errors and then finally tested through lighthouse, detail report for its accessibility and performance is given below;
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![143774644-71a6ed25-7c86-489a-9004-355adbc0285c](https://user-images.githubusercontent.com/91749477/143937189-cb5645d3-5660-4f40-8073-1563a262a763.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Validator Testing
 
----
+This site is created with help of following coding languages
+ 1. HTML5
+ 2. CSS
+ 
+ Coding of both languages has been tested through validators and reports are shown below.
 
-Happy coding!
+#### HTML Testing
+
+
+![html validator](https://user-images.githubusercontent.com/91749477/143773960-6363c27f-9c32-473e-9b3a-752fcbb196f3.png)
+
+
+
+
+#### CSS Testing
+
+
+![143773166-7e0f528a-c62f-443b-acaf-22937b66e2ac (1)](https://user-images.githubusercontent.com/91749477/143773885-3d2ec901-05cc-430a-ba60-fb26a2ad9097.png)
+
+
+
+
+### Bugs and unfixed bugs
+
+Here is the list of bugs found during running codes.
+
+1.In responsive design of mobile view all image were hugging right side of mobile creating extra space which looks not presentable
+ - I removed margins in media queries to bring images to left.
+2. stray end tag nav
+ - It was a duplicate so I removed one to fix the bug.
+3. Duplicate ID gallery 
+ - Two id created with different name one gal1 and other gal2.
+
+
+##### Unfix bugs
+
+
+Images sizes
+
+
+
+
+## Deployment
+
+
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+
+1. In the GitHub repository, navigate to the Settings tab
+2. From the source section drop-down menu, select the Master Branch
+3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+
+
+## Credits
+
+
+Here is the list of credits which helpls me to complete this webiste;
+
+#### content
+
+
+HTML structure and some of CSS style has been taken from game 'Rock, Paper and Scissor' of Code institute.
+
+
+#### Images
+
+All images has been taken from https://www.iconspng.com/images/rockpaperscissors/rockpaperscissors.jpg
+
+
+
+### Acknowledgements
+
+- My mentor Rohit for continous helpful feedback.
+- Tutor support at Code Institute for their support.
