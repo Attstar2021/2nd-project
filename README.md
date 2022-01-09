@@ -1,9 +1,9 @@
 # ***Rock Paper Scissors***
 
  
-Rock Paper Scissor is to entertain its user without the boundaries of age and experience limit, it is very easy and a good time passing game that has a truly randon which makes the game more fairer.
+Rock Paper Scissor is to entertain users without the boundaries of age and experience limit, it is a very easy and good time passing game that has truly random which makes the game fairer.
 
-This is responsive site and can be accessible on all size of devices for all type of user. View the live project below,
+This is a responsive site and can be accessible on all sizes of devices for all types of users. View the live project below,
 
 
 
@@ -22,7 +22,7 @@ This is responsive site and can be accessible on all size of devices for all typ
 ### The Header
 
 
-- Featured at the top the page, the header shows the game name is clear and colorful way which gives an idea of what game the user is going to play.
+- Features at the top of the page, the header shows the game name in a clear and colourful way which gives an idea of what game the user is going to play.
 
 
 
@@ -32,8 +32,8 @@ This is responsive site and can be accessible on all size of devices for all typ
 
 ### Game area
 
-- Game area includes buttons for making choices, players scoresboards, players images of selection and a quick resut display for every move.
-- This section provide interactive buttons that user can click to make a choice and play game.
+- The game area includes buttons for making choices, players scoresboards, players images of selection and a quick result display for every move.
+- This section provides interactive buttons which user can click to make a choice to play game.
 - when user click on an option, the image relating to their choices appears on screen along with computer choice and then results shows that is a winner.
 - The results and scores are clear to user to make it more easy to understand that who is winner on every move and also telly total scores for both players (i.e. user and computer).
 
@@ -161,5 +161,5 @@ All images has been taken from https://www.iconspng.com/images/rockpaperscissors
 
 ### Acknowledgements
 
-- My mentor Rohit for continous helpful feedback.
+- My mentor Rohit for continuous helpful feedback.
 - Tutor support at Code Institute for their support.
