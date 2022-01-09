@@ -1,108 +1,178 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ***Rock Paper Scissors***
 
-Welcome Attstar2021,
+ 
+Rock Paper Scissor is to entertain its user without the boundaries of age and experience limit, it is very easy and a good time passing game that has a truly randon which makes the game more fairer.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is responsive site and can be accessible on all size of devices for all type of user. View the live project below,
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+![148688269-487fec40-f796-4412-b64c-d480cff236b](https://user-images.githubusercontent.com/91749477/148688628-8f0a5767-86ab-4030-96e9-3a3dfa89cea3.png)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## Features
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+![mainImage](https://user-images.githubusercontent.com/91749477/148692175-7903593e-e618-4f0f-9f6d-d8cd15c56cc2.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### The Header
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+- Featured at the top the page, the header shows the game name is clear and colorful way which gives an idea of what game the user is going to play.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![header](https://user-images.githubusercontent.com/91749477/148692130-1b70c105-9b6d-4148-9f29-fb8043567c71.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Game area
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Game area includes buttons for making choices, players scoresboards, players images of selection and a quick resut display for every move.
+- This section provide interactive buttons that user can click to make a choice and play game.
+- when user click on an option, the image relating to their choices appears on screen along with computer choice and then results shows that is a winner.
+- The results and scores are clear to user to make it more easy to understand that who is winner on every move and also telly total scores for both players (i.e. user and computer).
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Gamearea](https://user-images.githubusercontent.com/91749477/148692167-cec715e2-70ed-413e-9fff-5365197c5d59.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- The following images show how this game works and looks while playing
+- Also shows how truly random the computer selections are.
+- Following are the glimps of the game, that how it works!
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![playingGame1](https://user-images.githubusercontent.com/91749477/148692179-9bef6b9a-3561-4fcd-b23f-5e9b9ef81774.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![playingGame2](https://user-images.githubusercontent.com/91749477/148692212-b79844e5-0be2-4f17-96b1-76bd10837c98.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![playingGame3](https://user-images.githubusercontent.com/91749477/148692205-e397cf37-eb69-45d4-8eab-a7a2d508fd01.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![playingGame4](https://user-images.githubusercontent.com/91749477/148692184-124bb5cd-b8c3-49b5-89cc-12239244d01b.png)
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### The Footer
 
-**How will this affect me?**
+- Footer Shows the game rules which makes game easy to understand and play. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![FooterImage](https://user-images.githubusercontent.com/91749477/148692152-483ca613-5918-4deb-bdc3-863da13001f9.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## User Experience (UX)
 
----
+- User stories
 
-Happy coding!
+   - First Time Visitor Goals
+
+     When i visit site for the first time I want to easily understand the main purpose of the site and also easy to understand how to 
+     
+   - Returning Visitor Goals
+
+     I want to find more information about services they provide and the best way to contact them.
+    
+   - Frequent User Goals
+
+     I want to check to see if there are any newly added services or styles for home renovation
+     
+
+
+## Testing
+
+Firstly this site was tested manually again and again to remove any errors and then finally tested through lighthouse, detail report for its accessibility and performance is given below;
+
+
+
+
+
+
+
+### Validator Testing
+
+This site is created with help of following coding languages
+ 1. HTML5
+ 2. CSS
+ 
+ Coding of both languages has been tested through validators and reports are shown below.
+
+#### HTML Testing
+
+
+
+
+
+
+#### CSS Testing
+
+
+
+
+
+
+
+### Bugs and unfixed bugs
+
+Here is the list of bugs found during running codes.
+
+1.In responsive design of mobile view all image were hugging right side of mobile creating extra space which looks not presentable
+ - I removed margins in media queries to bring images to left.
+2. stray end tag nav
+ - It was a duplicate so I removed one to fix the bug.
+3. Duplicate ID gallery 
+ - Two id created with different name one gal1 and other gal2.
+
+
+##### Unfix bugs
+
+
+Images sizes
+
+
+
+
+## Deployment
+
+
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+
+1. In the GitHub repository, navigate to the Settings tab
+2. From the source section drop-down menu, select the Master Branch
+3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+
+
+## Credits
+
+
+Here is the list of credits which helpls me to complete this webiste;
+
+#### content
+
+
+HTML structure and some of CSS style has been taken from game 'Rock, Paper and Scissor' of Code institute.
+
+
+#### Images
+
+All images has been taken from https://www.iconspng.com/images/rockpaperscissors/rockpaperscissors.jpg
+
+
+
+### Acknowledgements
+
+- My mentor Rohit for continous helpful feedback.
+- Tutor support at Code Institute for their support.
