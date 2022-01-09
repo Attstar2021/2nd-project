@@ -80,12 +80,16 @@ This coding style has been taken from love maths project */
 /* Player and Computer display.*/
 .you{
     display: inline-block;
-    background-color: rgb(31, 136, 31);   
+    background-color: rgb(31, 136, 31);
+    height: auto; 
+    width: auto;  
 }
 
 .comp{
     display: inline-block;
     background-color:rgb(175, 59, 59);
+    height: auto; 
+    width: auto;
 }
 
 .message{
