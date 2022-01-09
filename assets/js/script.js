@@ -11,7 +11,8 @@ const playerSelection = document.getElementById("playerImage");
 
 var rNum;
 var result;
-let oldScore = undefined;
+var playerImage;
+var compImage;
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -27,12 +28,10 @@ document.addEventListener("DOMContentLoaded", function(){
             computerSelection.setAttribute("src",`./assets/images/${compImage}.png`);
             playerSelection.setAttribute("src",`./assets/images/${playerImage}.png`);
             resultDisplay.innerHTML = result;
-            incrementComputerScore();
-            incrementPlayerScore();
         
-        })
+        });
     }
-})
+});
 
 
 
@@ -52,38 +51,59 @@ function generateComputerSelection(){
 }
 
 function compareSelection(){
-
+    
     if(playerImage == compImage)
     {
         result = "It's a tie game!";
+        draw();
     } else if (playerImage == 'scissor' && compImage == 'paper')
     {
-     result = "You Win!";  
+     result = "You Win!"; 
+     incrementPlayerScore();
+
     }else if (playerImage == 'paper' && compImage == 'rock')
     {
-     result = "You Win!" ;  
+     result = "You Win!" ;
+     incrementPlayerScore();
+
     }else if (playerImage == 'rock' && compImage == 'scissor')
     {
-     result = "You Win!";   
+     result = "You Win!"; 
+     incrementPlayerScore();
+
     }else if (playerImage == 'scissor' && compImage == 'rock')
     {
-     result = "Computer Wins!";  
+     result = "Computer Wins!"; 
+     incrementComputerScore();
     }else if (playerImage == 'rock' && compImage == 'paper')
     {
-     result = "Computer Wins!";  
+     result = "Computer Wins!";
+    incrementComputerScore(); 
     }else if (playerImage == 'paper' && compImage == 'scissor')
     {
-     result = "Computer Wins!";   
-    }}
+     result = "Computer Wins!"; 
+    incrementComputerScore(); 
+    }
+    resultDisplay.innerHTML=result;
+    }
+
+
 
     function incrementPlayerScore(){
-        let oldScore =parseInt(document.getElementById("player-score").innerText);
-        document.getElementById("player-score").innerText = ++oldScore;
+        let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
+        document.getElementById("player-score").innerText = ++oldPlayerScore;
+        incrementComputerScore.innerHTML =computerScore;
     }
     
     
     function incrementComputerScore(){
-        let oldScore =parseInt(document.getElementById("computer-score").innerText);
-        document.getElementById("computer-score").innerText = ++oldScore;
+        let oldCompScore =parseInt(document.getElementById("computer-score").innerText);
+        document.getElementById("computer-score").innerText = ++oldCompScore;
+        incrementPlayerScore = playerScore;
     }
-    
+    function draw(){
+        let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
+        document.getElementById("player-score").innerText = ++oldPlayerScore;
+        let oldCompScore =parseInt(document.getElementById("computer-score").innerText);
+        document.getElementById("computer-score").innerText = ++oldCompScore;
+    }
